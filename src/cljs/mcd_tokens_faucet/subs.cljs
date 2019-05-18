@@ -1,8 +1,9 @@
 (ns mcd-tokens-faucet.subs
   (:require
-   [re-frame.core :as re-frame]))
+   [re-frame.core :as rf]))
 
-(re-frame/reg-sub
+(rf/reg-sub
  ::name
  (fn [db]
+   (println db)
    (:name db)))

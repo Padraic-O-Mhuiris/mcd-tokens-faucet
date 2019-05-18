@@ -12,3 +12,6 @@ pom.xml.asc
 .lein-failures
 .nrepl-port
 .cpcache/
+/resources/
+figwheel_server.log
+.rebel_readline_history

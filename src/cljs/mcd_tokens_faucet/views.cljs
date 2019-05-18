@@ -1,11 +1,11 @@
 (ns mcd-tokens-faucet.views
   (:require
-   [re-frame.core :as re-frame]
-   [mcd-tokens-faucet.subs :as subs]
+   [re-frame.core :as r]
+   [mcd-tokens-faucet.subs :as s]
    ))
 
 (defn main-panel []
-  (let [name (re-frame/subscribe [::subs/name])]
+  (let [name (r/subscribe [::s/name])]
     [:div
-     [:h1 "Hello from " @name]
+     [:h1 "MCD TOKENS FAUCET"]
      ]))
